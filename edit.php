@@ -47,13 +47,21 @@ while($res = mysqli_fetch_array($result))
 
 <style>
     .container{
-        border: 1px solid black;
+        background: white;
         max-width: 600px;
         margin-top: 100px;
         border-radius: 15px;
+        padding: 10px 20px;
+    }
+    form{
+        margin-top: 20px;
     }
     .form-group{
         padding: 20px 10px;
+    }
+    .form-group label{
+        margin-bottom: 10px;
+        color: grey;
     }
     button{
         margin-left: 10px;
@@ -83,7 +91,7 @@ while($res = mysqli_fetch_array($result))
   <div class="form-group">
     <input type="hidden" name = "id" class="form-control" id="exampleInputPassword1" value=<?php echo $_GET['id'];?>>
   </div>
-  <button type="submit" class="btn btn-primary" name = "update" value="Update">Submit</button>
+  <button type="submit" class="btn btn-primary mt-1rem" name = "update" value="Update">Submit</button>
 </form>
 </div> 
     
